@@ -1,0 +1,6 @@
+name = "leanriff"
+version = "0.1.0"
+defaultTargets = ["LeanRiff"]
+
+[[lean_lib]]
+name = "LeanRiff"
