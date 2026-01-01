@@ -1,1 +1,7 @@
+# Nix
+.direnv/
+result*
+result-*
+
+# Lean4
 /.lake
