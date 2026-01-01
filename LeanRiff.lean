@@ -9,3 +9,6 @@ inductive Chunk where
 
 def Chunk.toByteArray (c : Chunk) : ByteArray :=
   sorry
+
+def Chunk.fromByteArray (b : ByteArray) : Chunk :=
+  sorry
