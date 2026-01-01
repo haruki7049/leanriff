@@ -1,2 +1,2 @@
 # leanriff
-A Lean-lang library for RIFF format
+A Lean4 library for RIFF format
