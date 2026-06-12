@@ -4,3 +4,4 @@ defaultTargets = ["LeanRiff"]
 
 [[lean_lib]]
 name = "LeanRiff"
+srcDir = "src"
