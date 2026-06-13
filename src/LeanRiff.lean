@@ -18,5 +18,5 @@ def FourCC.fromByteArray (b : ByteArray) (h : b.size = 4 := by decide) : FourCC 
 #check FourCC.data
 #check Data
 #check Data.mk
-#eval Data.mk (ByteArray.mk #[0, 0, 0, 0])
+#check Data.mk (ByteArray.mk #[0, 0, 0, 0])
 #check FourCC.fromByteArray (ByteArray.mk #[0, 0, 0, 0])
