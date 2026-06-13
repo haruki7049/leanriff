@@ -32,4 +32,4 @@ inductive Chunk where
 #check Chunk.Chunk
 #check Chunk.List
 #check Chunk.Riff
-#check Chunk.Chunk (FourCC.fromByteArray (ByteArray.mk #[0x00, 0x00, 0x00, 0x00]))
+#check Chunk.Chunk (FourCC.fromByteArray (ByteArray.mk #[0x00, 0x00, 0x00, 0x00])) (ByteArray.mk #[0x00, 0x00, 0x00])
