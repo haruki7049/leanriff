@@ -1,14 +1,17 @@
+abbrev Data := { b : ByteArray // b.size = 4 }
+
+def Data.mk (b : ByteArray) (h : b.size = 4 := by decide) : Data :=
+  Subtype.mk b h
+
+#check Data
+
 structure FourCC where
-  data : ByteArray
-  inv : data.size = 4
+  data : Data
 
-inductive Chunk where
-  | chunk (id : FourCC) (data : ByteArray)
-  | riff_chunk (id : FourCC) (chunks : Array Chunk)
-  | list_chunk (chunks : Array Chunk)
-
-def Chunk.toByteArray (c : Chunk) : ByteArray :=
-  sorry
-
-def Chunk.fromByteArray (b : ByteArray) : Chunk :=
-  sorry
+#check FourCC
+#check FourCC.rec
+#check FourCC.mk
+#check FourCC.data
+#check Data
+#check Data.mk
+#eval Data.mk (ByteArray.mk #[0, 0, 0, 0])
